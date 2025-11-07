@@ -32,7 +32,7 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "3.0.0",
     "@linthtml/linthtml": "0.9.6",
-    "browser-sync": "3.0.2",
+    "browser-sync": "^2.27.10",
     "browserslist-to-esbuild": "2.1.1",
     "eslint": "8.57.0",
     "eslint-config-htmlacademy": "10.0.1",

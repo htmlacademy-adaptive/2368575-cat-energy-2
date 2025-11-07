@@ -1,0 +1,122 @@
+.subscription {
+  font-family: $secondary-font;
+}
+
+.subscription__title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    margin-bottom: 66px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 72px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.subscription__text {
+  margin: 0;
+  margin-bottom: 22px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 22px;
+    width: 632px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 752px;
+  }
+}
+
+.subscription__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    width: 632px;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 104px;
+    width: 752px;
+  }
+}
+
+.subscription__field {
+  padding: 13px;
+  width: 280px;
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: solid 1px #e7e7e7;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    outline: solid 2px #444444;
+  }
+
+  &:invalid {
+    outline: solid 2px #ff8282;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
+}
+
+::placeholder {
+  color: $base-color;
+}
+
+.subscription__button {
+  padding: 15px 81.5px;
+  font-size: 20px;
+  line-height: 26px;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 70px;
+    width: 256px;
+  }
+}

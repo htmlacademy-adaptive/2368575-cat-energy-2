@@ -1,0 +1,198 @@
+.instructions__inner {
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 69px;
+  }
+}
+
+.instructions__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.instructions__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 77px;
+  }
+}
+
+.instructions__item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 57px;
+    margin-bottom: 37px;
+    flex-direction: column;
+    gap: 31px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.instructions__item--healthy {
+  @media (min-width: $tablet-width) {
+    width: 230px;
+    margin-right: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 17px;
+  }
+}
+
+.instructions__item--easy {
+  @media (min-width: $tablet-width) {
+    width: 246px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 2px;
+  }
+}
+
+.instructions__item--advice {
+  @media (min-width: $tablet-width) {
+    width: 247px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 248px;
+  }
+}
+
+.instructions__item--result {
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 246px;
+  }
+}
+
+.instructions__item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $basic-green;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.instructions__item--healthy::before {
+  background-image: url("../../icons/icon-leaf.svg");
+  background-size: 30px 32px;
+}
+
+.instructions__item--easy::before {
+  background-image: url("../../icons/icon-water.svg");
+  background-size: 26px 29px;
+}
+
+.instructions__item--advice::before {
+  background-image: url("../../icons/icon-eat.svg");
+  background-size: 25px 30px;
+}
+
+.instructions__item--result::before {
+  background-image: url("../../icons/icon-clock.svg");
+  background-size: 26px 31px;
+}
+
+.instructions__item::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 112px;
+    height: 280px;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.instructions__item--healthy::after {
+  background-image: url("../../icons/number-one.svg");
+  background-size: 112px 280px;
+}
+
+.instructions__item--easy::after {
+  width: 134px;
+  background-image: url("../../icons/number-two.svg");
+  background-size: 134px 280px;
+}
+
+.instructions__item--advice::after {
+  width: 134px;
+  background-image: url("../../icons/number-three.svg");
+  background-size: 134px 280px;
+}
+
+.instructions__item--result::after {
+  width: 136px;
+  background-image: url("../../icons/number-four.svg");
+  background-size: 136px 280px;
+}
+
+.instructions__text {
+  margin: 0;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  width: 200px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 245px;
+  }
+}
+
+.instructions__text br {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}

@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Юлия Перелыгина](https://up.htmlacademy.ru/adaptive-individual/2/user/2368575).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 

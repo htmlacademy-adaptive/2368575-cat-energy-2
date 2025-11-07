@@ -1,0 +1,55 @@
+.invitation {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 407px;
+  }
+}
+
+.invitation__text {
+  margin: 0;
+  width: 140px;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.invitation__address {
+  width: 140px;
+  font-style: normal;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 157px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.invitation__street {
+  margin: 0;
+}
+
+.invitation__city {
+  margin: 0;
+}

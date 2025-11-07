@@ -1,1 +1,17 @@
-/* здесь используйте глобальные переменные */
+// ЦВЕТ ТЕКСТА
+$base-color: #444444;/* здесь используйте глобальные переменные */
+$secondary-color: #000000;
+$thirdly-color: #ffffff;
+
+// ШРИФТ
+$base-font: "Lato", "Arial", sans-serif;
+$secondary-font: "Oswald", "Arial", sans-serif;
+
+// ЦВЕТ ФОНА
+$basic-green: #68b738;
+$basic-grey: #f2f2f2;
+$secondary-grey: #eaeaea;
+
+// ВЬЮПОРТ
+$tablet-width: 768px;
+$desktop-width: 1440px;

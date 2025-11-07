@@ -1,0 +1,14 @@
+.main-header {
+  position: relative;
+  z-index: 1;
+}
+
+.main-header__wrapper--catalog {
+  @media (max-width: 767px) {
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 74px;
+  }
+}

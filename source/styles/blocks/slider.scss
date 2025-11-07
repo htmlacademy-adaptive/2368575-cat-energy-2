@@ -1,0 +1,80 @@
+.slider__container {
+  position: relative;
+}
+
+.slider__before {
+  z-index: 1;
+  clip-path: inset(0 50% 0 0);
+}
+
+.slider__after {
+  position: absolute;
+  top: 0;
+  clip-path: inset(0 0 0 50%);
+  z-index: 2;
+}
+
+.slider__button {
+  width: 4px;
+  height: 256px;
+  border: none;
+  border-radius: 2px;
+  background-color: #666666;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
+}
+
+.slider__button::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-45%, -50%);
+}
+
+.slider__button::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 18px;
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#slider-arrows");
+  mask-size: 24px 18px;
+  mask-repeat: no-repeat;
+  mask-position: 50%;
+  position: absolute;
+  transform: translate(-42%, -50%);
+}
+
+.slider__button:hover,
+.slider__button:hover::after {
+  background-color: $basic-green;
+}
+
+.slider__button:hover::before {
+  border-color: $basic-green;
+}
+
+.slider__button:active,
+.slider__button:active::after {
+  background-color: #5eaa2f;
+  opacity: 0.6;
+}
+
+.slider__button:active::before {
+  border-color: #5eaa2f;
+  opacity: 0.6;
+}

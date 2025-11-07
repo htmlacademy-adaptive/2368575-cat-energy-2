@@ -1,0 +1,101 @@
+.main-footer {
+  background-color: $basic-grey;
+}
+
+.main-footer__inner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+    padding-bottom: 66px;
+  }
+}
+
+.main-footer__logo {
+  padding-top: 20px;
+  padding-bottom: 19px;
+
+  @media (max-width: 767px) {
+    border-bottom: 1px solid #d9d9d9;
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-right: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 416px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-footer__logo img {
+  @media (max-width: 767px) {
+    margin: 0 auto;
+  }
+}
+
+.main-footer__copyright {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $base-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 5px;
+    width: 168px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/stack.svg#academy-logo");
+    mask-size: 27px 34px;
+    mask-repeat: no-repeat;
+    background-color: #666666;
+  }
+}
+
+.main-footer__copyright:hover::after,
+.main-footer__copyright:focus::after {
+  background-color: $basic-green;
+}
+
+.main-footer__copyright:active {
+  opacity: 0.3;
+}
+
+.main-footer__copyright:active::after {
+  background-color: $basic-green;
+  opacity: 0.3;
+}

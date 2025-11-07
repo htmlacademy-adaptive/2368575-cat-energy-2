@@ -1,0 +1,118 @@
+.gift {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)
+    )
+    top / 100% 290px no-repeat,
+    url("../../images/bg-gift-mobile@1x.jpg")
+    left top / 100% 290px no-repeat;
+
+  @media (max-width: 767px) and (min-resolution: 2dppx) {
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      )
+      top / 100% 290px no-repeat,
+      url("../../images/bg-gift-mobile@2x.jpg")
+      left top / 100% 290px no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      )
+      top / 100% 200px no-repeat,
+      url("../../images/bg-gift-tablet@1x.jpg")
+      left top / 100% 200px no-repeat;
+  }
+
+  @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      )
+      top / 100% 200px no-repeat,
+      url("../../images/bg-gift-tablet@2x.jpg")
+      left top / 100% 200px no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      )
+      top / 245px 288px no-repeat,
+      url("../../images/bg-gift-desktop@1x.jpg")
+      left top / 245px 288px no-repeat;
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      )
+      top / 245px 288px no-repeat,
+      url("../../images/bg-gift-desktop@2x.jpg")
+      left top / 245px 288px no-repeat;
+  }
+}
+
+.gift__text {
+  position: relative;
+  margin: 0;
+  padding: 187px 61px 43px 58px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $thirdly-color;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 125px 69px 421px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 185px 42px 43px;
+    text-align: center;
+  }
+}
+
+.gift__text::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 80px;
+  background-image: url("../../icons/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 70px 80px;
+  position: absolute;
+  top: 59px;
+  left: 101px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 83px;
+    background-size: 80px 83px;
+    top: 57px;
+    left: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 56px;
+    left: 83px;
+  }
+}

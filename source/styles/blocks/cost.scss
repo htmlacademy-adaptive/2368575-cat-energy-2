@@ -1,0 +1,35 @@
+.cost {
+  font-family: $secondary-font;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $secondary-color;
+}
+
+.cost__description {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 11px;
+  }
+}
+
+.cost__value {
+  margin-left: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 63px;
+  }
+}

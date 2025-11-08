@@ -1,3 +1,4 @@
+/* Burger-menu */
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
 
@@ -15,7 +16,7 @@ navToggle.addEventListener('click', () => {
   }
 });
 
-
+/* Slider */
 const slider = document.querySelector('.slider');
 const sliderContainer = slider?.querySelector('.slider__container');
 const sliderButton = slider?.querySelector('.slider__button');
@@ -38,6 +39,7 @@ if (sliderContainer && sliderButton && sliderBefore && sliderAfter) {
     sliderAfter.style.clipPath = `inset(0 0 0 ${percentage}%)`;
     sliderButton.style.left = `${percentage}%`;
   };
+
 
   const handleMove = (clientX) => {
     if (!isDragging) {

@@ -13,6 +13,18 @@
   cursor: pointer;
 }
 
+.card__picture {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+
 .card__image {
   @media (min-width: $tablet-width) {
     margin: 10px 25px 22px;
@@ -61,6 +73,17 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 100px;
+  }
+}
+
+.card__name {
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
